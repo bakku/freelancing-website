@@ -10,3 +10,4 @@ sass:
   style: compressed
 exclude:
   - .idea
+  - .github

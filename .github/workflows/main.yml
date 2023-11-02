@@ -9,3 +9,13 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build docker image
       run: docker build -t freelancing-website:latest .
+    - name: Save docker image as tarball
+      run: docker save freelancing-website:latest | gzip > freelancing-website.tar.gz
+    - name: Copy docker image tarball to production
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        source: freelancing-website.tar.gz
+        target: ${{ secrets.TARGET_PATH }}
