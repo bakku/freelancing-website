@@ -1,92 +1,88 @@
 ---
 layout: home
 header:
-  title: YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES
+  title: Pragmatische Software für den Web- und Cloud-Bereich
   text: >
-    Start Bootstrap can help you build better websites using the Bootstrap
-    framework! Just download a theme and start customizing, no strings attached!
-  action: # action button is optional
-    label: Find Out More
+    Wir entwickeln für Sie hochqualitative Web- und Cloud-Systeme
+    mit einem Preis-Leistungs-Verhältnis, das einfach stimmt
+  action:
+    label: Lernen Sie unseren Ansatz kennen!
     url: '#about'
-
 
 sections:
   - type: call-to-action.html
     section_id: about
     background_style: bg-primary
-    title: We've got what you need!
-    text: Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-    actions:
-      - title: Get Started!
-        url: '#page-top'
-        class: btn-light
+    title: Software-Projekte dauern und sind kostspielig?
+    text: >
+      Das muss nicht so sein! Die Dauer und Kosten eines Software-Projekts
+      lassen sich durch eine Vielzahl von Möglichkeiten senken und beeinflussen.
+      Lernen Sie unsere Prinzipien und Methoden kennen mit denen wir für Sie effizient
+      und zugleich hochwertig Software-Systeme entwickeln.
 
   - type: services.html
-    section_id: services
-    #background_style: bg-info
-    title: At Your Service
+    section_id: principles
+    title: Unsere Grundprinzipien
     services:
-      - title: Sturdy Templates
-        text: Our templates are updated regularly so they don't break.
-        icon: bi-gem text-info
-        url: https://startbootstrap.com/
-      - title: Ready to Ship
-        text: You can use this theme as is, or you can make changes!
-        icon: bi-rocket-takeoff
-      - title: Up to Date
-        text: We update dependencies to keep things fresh.
-        icon: bi-activity
-      - title: Made with Love
-        text: You have to make your websites with love these days!
-        icon: bi-heart-fill
-      - title: Other 1
-        text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
-      - title: Other 2
-        text: Some not-so long text here.
-        icon: bi-emoji-sunglasses-fill
+      - title: Pragmatismus
+        text: >
+          Wir arbeiten anwendungs- und problembezogen und verwenden stets das passende Mittel.
+          Dies schlägt sich im gesamten Projektverlaufs nieder, ob bei der Wahl von Technologien
+          (wir bevorzugen Ruby on Rails) oder der Menge an Projektbeteiligten (weniger ist mehr).
+          Mit Pragmatismus führen wir Sie effizient an Ihr Ziel!
+        icon: bi-tools
+      - title: Vertrauen
+        text: >
+          Statt beschwerlicher Bürokratie, die Ihnen und uns Zeit und Geld kostet
+          und einen flüssigen Projektverlauf behindert, setzen wir auf Vertrauen
+          und Transparenz. Dadurch zielen wir nicht nur auf eine langfristige und
+          fruchtbare Zusammenarbeit ab, sondern kommen unseren Wunsch nach
+          reibungsloser Software-Entwicklung näher.
+        icon: bi-suit-heart-fill
+      - title: Geteiltes Risiko - Geteilter Erfolg
+        text: >
+          Wir lassen Sie nicht allein das Risiko eines Software-Projekts tragen.
+          Wir zielen auf eine langfristige Projektzusammenarbeit ab und setzen
+          auf Verträge, mit welchen wir das Risiko sowie den Erfolg eines 
+          Projekts mit Ihnen teilen. Dies garantiert Ihnen nachhaltliche
+          und kosteneffiziente Zusammenarbeit aus unserem eigenen Interesse.
+        icon: bi-graph-up-arrow
 
   - type: portfolio.html
-    # this section has always ID 'portfolio'
-    #section_id: portfolio
-    #background_style: bg-dark
+    background_style: bg-dark
+    title: Leistungsspektrum
     projects:
       - title: Project 1
         text: This is a very short project description.
-        # the images are located in:
-        # img/portfolio/fullsize
-        # img/portfolio/thumbnails
-        icon: 1.jpg
-        url: '#'
+        image: 1.jpg
       - title: Project 2
         text: This is a very short project description.
-        icon: 2.jpg
-        url: '#'
+        image: 2.jpg
       - title: Project 3
         text: This is a very short project description.
-        icon: 3.jpg
-        url: '#'
-      - title: Project 4
-        text: This is a very short project description.
-        icon: 4.jpg
-        url: '#'
-      - title: Project 5
-        text: This is a very short project description.
-        icon: 5.jpg
-        url: '#'
-      - title: Project 6
-        text: This is a very short project description.
-        icon: 6.jpg
-        url: '#'
+        image: 3.jpg
 
-  - type: aside.html
-    section_id: aside
-    title: Free Download at Start Bootstrap!
+  - type: timeline.html
+    section_id: timeline
+    title: Major Achievements!
+    background_style: bg-dark text-primary
+    last_image: assets/img/timeline-end.png
     actions:
-      - title: Download Now!
-        url: https://startbootstrap.com/themes/creative/
-        class: btn-light
-
+      - image: assets/img/portfolio/1.jpg
+        title: >+
+               2017-2018
+               **Humble Beginnings**
+        text: >-
+               We begun with small group of people willing to work hard and make our
+               teaching skills worth , in front of all others!
+      - image: assets/img/portfolio/2.jpg
+        title: >+
+               November 2019
+               An Coaching started
+        text: >-
+               We started to gather like minded people and started our stategies
+               and future plans to them. As a result , interested people joined us!
+          
   - type: members.html
     section_id: members
     title: Our Crew!
@@ -116,27 +112,6 @@ sections:
         text: PR.
         image: assets/img/members/person7.jpg
         url: '#'
-
-  - type: timeline.html
-    section_id: timeline
-    title: Major Achievements!
-    background_style: bg-dark text-primary
-    last_image: assets/img/timeline-end.png
-    actions:
-      - image: assets/img/portfolio/thumbnails/1.jpg
-        title: >+
-          2017-2018
-          **Humble Beginnings**
-        text: >-
-          We begun with small group of people willing to work hard and make our
-          teaching skills worth , in front of all others!
-      - image: assets/img/portfolio/thumbnails/2.jpg
-        title: >+
-          November 2019
-          An Coaching started
-        text: >-
-          We started to gather like minded people and started our stategies
-          and future plans to them. As a result , interested people joined us!
 
   - type: contact.html
     section_id: contacts

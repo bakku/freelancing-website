@@ -1,15 +1,20 @@
-<div id="portfolio" class="{{ section.background_style }}">
-  <div class="container-fluid p-0">
+<div id="portfolio" class="{{ section.background_style }} page-section pb-0">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0 text-white">{{ section.title }}</h2>
+    <hr class="divider border border-white border-2">
+    <div style="height: 1px"></div>
+  </div>
+  <div class="container-fluid p-0 mt-5">
     <div class="row g-0">
       {% for proj in section.projects %}
       <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="assets/img/portfolio/fullsize/{{ proj.icon }}" title="{{ proj.title }}">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/{{ proj.icon }}" alt="{{ proj.icon }}" />
-              <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">{{ proj.title }}</div>
-                  <div class="project-name">{{ proj.text }}</div>
-              </div>
-          </a>
+        <div class="portfolio-box" title="{{ proj.title }}">
+          <img class="img-fluid" src="assets/img/portfolio/{{ proj.image }}" alt="{{ proj.image }}"/>
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">{{ proj.title }}</div>
+            <div class="project-name">{{ proj.text }}</div>
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>

@@ -1,10 +1,9 @@
-<section class="page-section {{ section.background_style }}" id="{{ section.section_id }}">
+<section class="page-section {{ section.background_style }}" {% if section.section_id %}id="{{ section.section_id }}"{% endif %}>
   <div class="container px-4 px-lg-5">
     <h2 class="text-center mt-0">{{ section.title }}</h2>
     <hr class="divider border border-primary border-2">
     <div class="row gx-4 gx-lg-5 justify-content-center">
-      <!-- {#% assign cols = section.size | at_most: 4 %#} -->
-      {% assign cols = section.size %}
+      {% assign cols = section.services.size %}
       {% if cols > 4 %}
         {% assign cols = 4 %}
       {% endif %}
